@@ -7,7 +7,13 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan("org.ctube.channel.service")
+/**
+ * 
+ * @author gnandiga
+ *
+ * This is not working:  basePackages = "org.ctube.channel", 
+ */
+@ComponentScan(value ={ "org.ctube.channel.service" })
 public class AppConfig
 {
 
